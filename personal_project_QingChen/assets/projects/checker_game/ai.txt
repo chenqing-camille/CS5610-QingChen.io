@@ -1,0 +1,16 @@
+1. Did you attempt to make your computer player smarter than the baseline -- i.e., do something more clever than just pick a random/arbitrary legal move?
+    NO
+2. If so, were you able to accomplish this? Is your computer player as smart as you would like?
+    NO
+3. How did you determine which piece to play next? Tell us about your “pick next move” algorithm
+    First, I traverse all the red pieces in the board and to find out which are available for capturing(captured_moves) or simply moving(valid_moves), save them as lists.
+    Second, I prioritize the available pieces in captured_moves[] and pick one randomly
+    Third, if captured_moves is None, then I pick one piece from valid_moves list.
+    Forth, if more than one jump can be made with the same piece, then jump multiple times.
+
+How often did your computer program beat you, or your friends, or whoever tested it out for you?
+    30% win, 20% draw, 50% win
+
+How would you improve it in the future?
+    To make my program better, I could try using a more advanced evaluation function that considers the value of the pieces, the position of the board, and the potential for future moves. Before an actual move, I could make it consider the next even next next step of AI and its opponents. Therefore the AI will have a comprehensive view about the checker board. Like AlphaGo, I believe machine learning is one of the most important part of a game of ComputerVSHuman, so I'd like to let the AI learn more about chess strategy based on chess book, AI can make the best decision based on human experience and improve it.
+    For example, the captured_moves must be taken, but when moere than one checker can be captured, the ai should also consider other checkers on the board instead of just ramdomli skipping one.

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>quiz 1</title>
+  </head>
+  <style>
+    header {
+      display: flex;
+      background-color: #ddd;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      justify-content: center;
+    }
+
+    footer {
+      display: flex;
+      background-color: #ddd;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      justify-content: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 10px;
+    }
+
+    .column {
+      width: 50%;
+      margin: 5px;
+      padding: 10px;
+      border: 1px solid;
+      box-shadow: 2px 2px 1px lightgrey;
+    }
+
+    @media (min-width: 1201px) {
+      .largeScreen {
+        background-color: lightblue;
+      }
+    }
+
+    @media (min-width: 801px) and (max-width: 1200px) {
+      .midScreen {
+        background-color: lightgreen;
+      }
+    }
+
+    @media (max-width: 800px) {
+      .smallScreen {
+        width: 80%;
+        background-color: lightyellow;
+      }
+      .fullLength {
+        flex-direction: column;
+      }
+    }
+  </style>
+
+  <header>
+    <h1>Qing Chen</h1>
+  </header>
+  <body>
+    <div class="container fullLength">
+      <div class="column smallScreen midScreen largeScreen">
+        Colunm 1 content
+      </div>
+      <div class="column smallScreen midScreen largeScreen">
+        Colunm 2 content
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <h1>Qing Chen</h1>
+  </footer>
+</html>

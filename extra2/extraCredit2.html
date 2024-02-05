@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Extra Credit Lab</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      margin-top: 15%;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .box {
+      display: flex;
+      height: 300px;
+      width: 300px;
+      background-color: red;
+      border: 1px solid purple;
+    }
+
+    .box:hover {
+      background-color: green;
+    }
+
+    @media (min-width: 600px) {
+      .boxNoBorder {
+        border: none;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="box boxNoBorder"></div>
+    <div class="box boxNoBorder"></div>
+    <div class="box boxNoBorder"></div>
+  </body>
+</html>

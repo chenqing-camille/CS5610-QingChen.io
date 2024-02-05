@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>quiz 1</title>
+  </head>
+  <style>
+    .gallery {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 500px;
+      background-color: lightgray;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .photo {
+      width: 200px;
+      height: 300px;
+      margin: 10px;
+    }
+
+    .photoBlue {
+      background-color: cyan;
+    }
+
+    .photoPink {
+      background-color: lightcoral;
+    }
+
+    .photoGreen {
+      background-color: lightgreen;
+    }
+
+    @media (max-width: 600px) {
+      .balckBackground {
+        background-color: black;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="gallery balckBackground">
+      <div class="photo photoBlue"></div>
+      <div class="photo photoPink"></div>
+      <div class="photo photoGreen"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+Functions tested for Part 1:
+1. Checker.set_position()
+2. Checker.get_board_position()
+3. Checker.is_mouse_over()
+4. Checker.draw()
+
+Valid inputs and expected return values:
+1. Checker.set_position(x, y)
+   - Input: x and y within the range of the 2x2 board
+   - Expected output: Checker's position updated to the new coordinates
+
+2. Checker.get_board_position(x, y)
+   - Input: x and y within the pixel coordinates of the 2x2 board
+   - Expected output: Board position (row and column) corresponding to the pixel coordinates
+
+3. Checker.is_mouse_over(x, y)
+   - Input: x and y within the pixel coordinates of the checker
+   - Expected output: True
+
+4. GameController.mousePressed():
+   assert mouseX, mouseY is within the board and is over the checker
+
+Invalid inputs and expected return values:
+1. Checker.set_position(x, y)
+   - Input: x and y outside the range of the 2x2 board
+   - Expected output: Checker's position remains unchanged
+
+2. Checker.get_board_position(x, y)
+   - Input: x and y outside the pixel coordinates of the 2x2 board
+   - Expected output: Board position (-1, -1) indicating invalid coordinates
+
+3. Checker.is_mouse_over(x, y)
+   - Input: x and y outside the pixel coordinates of the checker
+   - Expected output: False
+
+Confidence in verifying every possible eventuality:
+- The current testing plan covers the primary functionality for Part 1. However, additional test cases might be required for handling multiple checkers, captures, and computer opponent logic.
+
+Bugs revealed by testing and fixed:
+- The crown image not moving with the checker when it becomes a king
+- The king not being restricted to move only downwards

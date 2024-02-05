@@ -1,0 +1,7 @@
+Records of Checker Game
+User    Scores
+elsa    11
+Elisa    2
+
+elsa    1
+elsa    2

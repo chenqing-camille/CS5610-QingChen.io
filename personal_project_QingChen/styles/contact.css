@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .topContainer {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .headline {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+  }
+
+  .contactContainer {
+    display: grid;
+    padding-top: 60px;
+    padding-left: 300px;
+    padding-right: 300px;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 2fr 3fr;
+    grid-gap: 50px;
+  }
+
+  .contactInfo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 35px;
+    justify-content:flex-start;
+    align-items: center;
+    
+  }
+
+  .iconImg {
+    padding-left: 50px;
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+  }
+
+  .iconImg:hover {
+    width: 45px;
+    height: 45px;
+  }

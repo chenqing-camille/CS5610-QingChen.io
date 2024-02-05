@@ -1,0 +1,49 @@
+Data structures:
+- Global variables (checker_x, checker_y, king, crown_img)
+
+Classes:
+1. Checker
+2. CheckerBoard
+3. GameController
+
+Functions and methods:
+1. setup() (outside any class)
+2. draw() (outside any class)
+3. mousePressed() (outside any class)
+4. mouseReleased() (outside any class)
+
+Class and function/method descriptions:
+1. Checker:
+    - Represents a single checker piece
+    - __init__(self, color, x, y)
+    - set_position(self, x, y)
+    - get_board_position(self, x, y)
+    - is_mouse_over(self, x, y)
+    - draw(self, king, crown_img)
+    - draw_checker_with_borders(self, x, y)
+
+2. CheckerBoard:
+    - Represents the checkerboard
+    - __init__(self)
+    - draw(self)
+
+3. GameController:
+    - Handles the game logic and controls
+    - __init__(self)
+    - setup(self)
+    - draw(self)
+    - mousePressed(self)
+    - mouseReleased(self)
+
+Driver pseudocode: 
+1. Initialize the game controller
+2. Set up the game
+3. Draw the board and checker
+4. When the user presses the mouse:
+    - If the mouse is over the checker, pick it up
+5. When the user releases the mouse:
+    - If the checker was picked up:
+        - Check if the move is legal and move the checker
+        - If the move is not legal, return the checker to its original position
+        - If the checker reaches the opposite edge of the board, make it a king
+6. Repeat steps 3-5 until the game is over

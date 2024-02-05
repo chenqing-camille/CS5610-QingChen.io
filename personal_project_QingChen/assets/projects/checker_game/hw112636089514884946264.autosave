@@ -1,0 +1,36 @@
+from game_controller import GameController
+
+# Initialize the GameController object
+
+def setup():
+    global game_controller
+    global countdown
+    countdown = 0
+    size(800, 800)
+    wordsFont = createFont("BadaboomBB_Reg.otf", 150)
+    game_controller = GameController(wordsFont)
+    game_controller.setup()
+
+def draw():
+    if countdown == 0:
+        game_controller.draw()
+    else:
+        countdown -= 1
+
+
+def initiate_delay():
+    if delay_or_not:
+        countdown = 100
+    else:
+        countdown = 0
+
+def mousePressed():
+    game_controller.mousePressed()
+    delay_or_not = False
+
+def mouseDragged():
+    game_controller.mouseDragged()
+    
+def mouseReleased():
+    game_controller.mouseReleased()
+    delay_or_not = True
